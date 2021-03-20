@@ -8,6 +8,7 @@ public class Turn {
    */
   public static int startingTurn()
   {
+
     return (int) (Math.random()*2);
   }
 
