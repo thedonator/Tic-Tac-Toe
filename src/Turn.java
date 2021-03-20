@@ -1,5 +1,6 @@
 public class Turn {
 
+  public static int currentTurn;
   /**
    *
    * @return returns a number between 0 and 1
@@ -16,9 +17,9 @@ public class Turn {
   {
     if (currentTurn == 0)
     {
-      currentTurn = 1;
+      Turn.currentTurn = 1;
     }else{
-      currentTurn = 0;
+      Turn.currentTurn = 0;
     }
   }
 }
