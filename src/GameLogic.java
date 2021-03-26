@@ -31,7 +31,7 @@ public class GameLogic {
    * @param in is the input stream
    * @return returns true if the move in input is valid
    */
-  public static boolean hasTheRightsToBeMoved(Scanner in)
+  public static boolean isAFreeCell(Scanner in)
   {
     return Board.isEmpty[Board.yMove][Board.xMove];
   }
