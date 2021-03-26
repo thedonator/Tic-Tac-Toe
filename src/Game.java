@@ -12,6 +12,14 @@ public class Game {
     {
       GetMoves.getX(in);
       GetMoves.getY(in);
+      while (!GameLogic.isValidXMove(in) || 
+      !GameLogic.isValidYMove(in) || 
+      !GameLogic.isAFreeCell(in)) {
+
+        System.out.println("Not a valid move please reinsert:");
+        GetMoves.getX(in);
+        GetMoves.getY(in);
+      }
       Board.updateBoard(in);
       Board.printBoard();
       Turn.changeTurn(Turn.currentTurn);
